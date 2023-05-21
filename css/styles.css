@@ -42,8 +42,8 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; */
-  outline: 2px solid red;
-  outline-offset: 2px;
+  /* outline: 2px solid red;
+  outline-offset: 2px; */
 }
 
 /* Tablet screen >= 768 */
@@ -635,7 +635,7 @@ img {
 
 @media only screen and (min-width: 1158px) {
   .section {
-    padding: 0;
+    padding-bottom: 120px;
   }
 }
 
@@ -756,7 +756,7 @@ img {
   margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .team-list > .list-item:not(:last-child) {
     /* margin-right: 24px; */
     margin-bottom: 72px;
@@ -996,7 +996,7 @@ img {
   transform: translateY(-50%); */
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .sub-input {
     width: 398px;
     height: 40px;
@@ -1491,10 +1491,10 @@ img {
 }
 /* Mobile Burger Button */
 
-@media only screen and (min-width: 428px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 24px;
+    min-width: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1597,13 +1597,19 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
   .menu-toggle {
     display: none;
   }
 }
 
 @media only screen and (min-width: 1158px) {
+  .menu-container {
+    display: none;
+  }
   .menu-toggle {
     display: none;
   }
