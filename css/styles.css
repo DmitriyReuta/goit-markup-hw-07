@@ -635,7 +635,7 @@ img {
 
 @media only screen and (min-width: 1158px) {
   .section {
-    padding: 120px 0;
+    padding: 0;
   }
 }
 
@@ -1598,6 +1598,12 @@ img {
 }
 
 @media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .menu-toggle {
     display: none;
   }
