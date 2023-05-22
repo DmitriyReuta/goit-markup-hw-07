@@ -98,7 +98,7 @@ img {
 }
 
 .header {
-  min-width: 428px;
+  /* min-width: 428px; */
   /* border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08); */
@@ -425,7 +425,7 @@ img {
   background-color: var(--bg-btn-color);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
   .box {
     min-width: 428px;
     padding-bottom: 25px;
@@ -454,7 +454,7 @@ img {
     min-width: 428px;
   }
   .footer {
-    min-width: 428px;
+    /* min-width: 428px; */
   }
   .sub-input {
     width: 398px;
@@ -584,7 +584,7 @@ img {
 }
 
 .about {
-  min-width: 428px;
+  /* min-width: 428px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -781,7 +781,7 @@ img {
 
 .team {
   background-color: var(--light-color);
-  min-width: 428px;
+  /* min-width: 428px; */
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1157px) {
@@ -1028,7 +1028,7 @@ img {
 }
 
 .customers {
-  min-width: 428px;
+  /* min-width: 428px; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
