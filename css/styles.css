@@ -38,8 +38,8 @@ ul {
   max-width: 428px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
-  outline-offset: 2px;
+  /* outline: 2px solid red;
+  outline-offset: 2px; */
 }
 /* width: 1158px;
   margin-left: auto;
@@ -1771,7 +1771,7 @@ img {
   background-color: var(--white-color);
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 250ms ease-in-out;
 }
 
