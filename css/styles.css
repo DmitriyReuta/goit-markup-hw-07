@@ -1234,7 +1234,7 @@ img {
   transform: translateY(-50%); */
 }
 
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .sub-input {
     width: 398px;
     height: 40px;
