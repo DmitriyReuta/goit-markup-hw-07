@@ -36,15 +36,16 @@ ul {
 .container {
   min-width: 320px;
   max-width: 428px;
-  margin: 0 auto;
-  /* width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+/* width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; */
-  /* outline: 2px solid red;
-  outline-offset: 2px; */
-}
 
 /* Tablet screen >= 768 */
 @media only screen and (min-width: 768px) {
@@ -200,6 +201,21 @@ img {
 }
 
 @media only screen and (max-width: 767px) {
+  .box {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .menu-toggle {
+    padding-right: 17px;
+  }
+
+  .logo-link {
+    margin-right: 0;
+  }
+
   .nav-list {
     display: none;
   }
@@ -356,6 +372,7 @@ img {
 /* Hero section */
 .hero {
   margin: 0 auto;
+  min-width: 320px;
   max-width: 1440px;
   background-color: var(--main-color);
   /* padding-top: 188px;
@@ -404,9 +421,11 @@ img {
   background-color: var(--bg-btn-color);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+}
+
 @media only screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
   }
@@ -803,16 +822,17 @@ img {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
-  .team {
-    min-width: 768px;
+  .list-item {
+    margin: 0;
   }
-
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 54px;
   }
   .team-list > .list-item:nth-child(-n + 2) {
-    margin-bottom: 64px;
   }
 }
 
@@ -947,9 +967,13 @@ img {
   .customers-container {
     min-width: 552px;
   }
+  .customers {
+    padding-bottom: 0;
+  }
   .customer {
     /* width: calc((100% - 24px) / 3); */
     flex-wrap: wrap;
+    padding-bottom: 96px;
   }
 }
 
@@ -1040,6 +1064,19 @@ img {
 .sub-label {
 }
 
+.sub-input {
+  width: 398px;
+  height: 40px;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+
 .sub-input::placeholder {
   font-style: normal;
   font-weight: 400;
@@ -1094,7 +1131,7 @@ img {
   transform: translateY(-50%); */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 428px) and (max-width: 767px) {
   .sub-input {
     width: 398px;
     height: 40px;
@@ -1126,9 +1163,12 @@ img {
     margin-bottom: 72px;
   }
 
+  .form-label {
+    margin: 0 auto;
+  }
+
   .sub-button-div {
     /* display: flex; */
-    padding: 15px;
     align-items: center;
     justify-content: center;
   }
@@ -1151,6 +1191,7 @@ img {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 60px;
   }
 
   .left-footer {
@@ -1164,7 +1205,7 @@ img {
     margin-bottom: 72px;
   }
   .sub-input {
-    min-width: 264px;
+    max-width: 264px;
     height: 40px;
     padding: 16px;
     margin-right: 24px;
@@ -1198,7 +1239,6 @@ img {
   .sub-button-div {
     display: flex;
     align-self: baseline;
-    align-items: center;
     justify-content: center;
   }
   .footer-text {
@@ -1591,7 +1631,7 @@ img {
 }
 /* Mobile Burger Button */
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 428px) and (max-width: 768px) {
   .menu-toggle {
     min-height: 24px;
     min-width: 24px;
@@ -1654,7 +1694,7 @@ img {
 
   .mobile-menu .link {
     display: block;
-    padding: 10px;
+    margin-bottom: 40px;
   }
 
   .mobile-contacts {
@@ -1673,6 +1713,7 @@ img {
     text-transform: capitalize;
     color: var(--bg-footer);
   }
+
   .mobile-link:hover {
     color: var(--bg-btn-color);
   }
@@ -1681,7 +1722,6 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--btn-color);
     margin-bottom: 40px;
